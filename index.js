@@ -23,7 +23,7 @@ let formattedGuess = Number(guess)
 function startGame(guess, formattedGuess){
   // --> if the user does not put in a valid number, run the loop below.
 while(isNaN(formattedGuess) || guess === ""){
-  console.log("==>WARNING: Your guess has to be a valid number")
+  console.log("==> Your guess has to be a valid number")
   guess = prompt(`WELCOME TO STAGE ${stage} Guess a number between ${min} and ${max} `)
   formattedGuess = Number(guess)
 }
